@@ -7,7 +7,8 @@ graph = {
   'F' : []
 }
 visited = [] # List to keep track of visited nodes.
-queue = []   # Initialize a queue
+queue = []   # Initialize a queue.
+
 def bfs(visited, graph, node):
     global queue
     visited.append(node)
@@ -19,5 +20,6 @@ def bfs(visited, graph, node):
             if neighbour not in visited:
                 visited.append(neighbour)
                 queue.append(neighbour)
-# Driver Code
+                
 bfs(visited, graph, 'A')
+
